@@ -18,5 +18,11 @@ export const StyledInputGroup = styled.div`
     margin-left: auto;
     text-align: right;
   }
+
+  .error-message {
+    color: ${({ theme }) => theme.colors.error};
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 

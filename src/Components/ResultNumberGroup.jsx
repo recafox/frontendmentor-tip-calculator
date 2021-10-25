@@ -8,7 +8,7 @@ const ResultNumberGroup = ({labelText, unit, value}) => {
         <small>/ {unit}</small>
       </div>
       <div className="value">
-        ${value}
+        $ {value ? value : '0.00'}
       </div>
     </StyledResultNumberGroup>
   )

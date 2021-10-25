@@ -19,6 +19,11 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.colors.base};
   }
 
+  &.is-selected {
+    background: ${({ theme }) => theme.colors.active};
+    color: ${({ theme }) => theme.colors.base};
+  }
+
   &.is-calculated {
     background: ${({ theme }) => theme.colors.result};
     color: ${({ theme }) => theme.colors.base};

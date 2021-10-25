@@ -22,9 +22,13 @@ export const setNumberOfPeople = (peopleNum) => {
 }
 
 
-export const calculate = () => {
+export const calculate = (tipAmountPerPerson, totalPerPerson) => {
   return {
-    type: ActionType.CALCULATE
+    type: ActionType.CALCULATE,
+    payload: {
+      tipAmountPerPerson,
+      totalPerPerson
+    }
   }
 }
 
